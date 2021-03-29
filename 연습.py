@@ -5,6 +5,9 @@ print(str[-1])
 print("Good End")
 
 str1 = "ABCDEFG"
-for x in range(1, 4):
-    print(x)
-print(str1[1:4])
+#for x in range(1, 4):
+#   print(x)
+#print(str1[1:4])
+
+if "ABC" in str1:
+    print("참")
