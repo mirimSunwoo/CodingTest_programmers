@@ -5,8 +5,7 @@ list1 = [10,20,30,40,50]
 # 따라서 a+=1은 a에 있는 값이 11,21,31,41,51로 변하는 것이지
 # list에 있는 값이 변하는 것은 아니다.
 
-for a in list1:
-    a += 1
-    print(a)
+for i in range(0, len(list1)):
+    list1[i] += 1
 
 print(list1)
