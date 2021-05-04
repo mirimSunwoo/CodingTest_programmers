@@ -4,7 +4,6 @@ def 보조함수(month, day):
    total = 0;
    for i in range(month-1):
        total += month_list[i]
-   # total += @@@
    return total - 1
 
 def solution(start_month, start_day, end_month, end_day):
