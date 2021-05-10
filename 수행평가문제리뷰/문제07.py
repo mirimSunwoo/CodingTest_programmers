@@ -1,14 +1,13 @@
-def solution(sentence):
+def solution(sentence): #sentence = 'never odd or even.'
     str = ''
     for c in sentence:
-        if c != '.' or c != ' ':
+        if c != '.' and c != ' ':
             str += c
     size = len(str)
     for i in range(size // 2):
         if str[i] != str[size - 1 - i]:
             return False
     return True
-
 
 # The following is code to output testcase. The code below is correct and you shall correct solution function.
 sentence1 = "never odd or even."
