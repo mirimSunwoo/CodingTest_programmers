@@ -5,14 +5,13 @@ def solution(number):
        current = i
        temp = count
        while current != 0:
-           if current%10==3 or current%10==6 or current%10==9:
+           if current%10 % 3 == 0 and current%10 != 0:
                count += 1
-               print("pair", end = '') # 디버깅을 위한 출력(없어도 무관)
            current = current // 10
    return count
 
 #The following is code to output testcase.
-number = 40
+number = 9
 ret = solution(number)
 print(ret)
 
