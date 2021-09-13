@@ -21,3 +21,9 @@ ret2 = solution(sentence2)
 
 # Press Run button to receive output.
 print("Solution: return value of the function is", ret2, ".")
+
+def solution(numbers):
+	answer = []
+	for x in numbers:
+		answer += numbers[x] + numbers[x+1]
+	return answer

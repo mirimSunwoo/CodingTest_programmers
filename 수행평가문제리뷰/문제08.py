@@ -4,7 +4,7 @@ def solution(characters):
    result += characters[0]
    for i in range(1,len(characters)):
        if characters[i - 1] != characters[i]:
-           result += characters[i+1]
+           result += characters[i]
    return result
 
 #The following is code to output test case. The code below is correct and you shall correct solution function.
